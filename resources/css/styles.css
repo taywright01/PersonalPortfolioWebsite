@@ -53,8 +53,13 @@ body {
     grid-template-columns: 1fr 1fr 1fr;
 }
 
+.content-wrapper {
+    margin: -1px;
+}
+
 .portfolio-item-wrapper {
-    position: relative;   
+    position: relative; 
+    margin: 1px;  
 }
 
 .portfolio-img-background {
@@ -79,6 +84,26 @@ body {
 }
 
 .logo-wrapper img {
-    width: 50%;
+    width: 30%;
     height: auto;
+    margin-bottom: 20px;
+    filter: invert(100%) sepia(27%) saturate(1930%) hue-rotate(137deg) brightness(102%) contrast(106%);
 }
+
+/* Selector needs to be more specific */
+.img-text-wrapper .subtitle {
+    transition: 1s;
+    font-weight: 600;
+    color: transparent;
+}
+
+.img-text-wrapper:hover .subtitle {
+    font-weight: 600;
+    color: lightseagreen;
+}
+
+.img-darken {
+    transition: 1s;
+    filter: brightness(10%);
+}
+
